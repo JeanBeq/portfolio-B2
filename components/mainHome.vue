@@ -1,11 +1,18 @@
 <template>
     <div class="container-main">
+        <video src="/video/video_background.mp4" autoplay loop muted></video>
         <h1>Developpeur web</h1>
         <h2>Jean Béquilleux - Web Developpeur situé à Annecy en France</h2>
     </div>
 </template>
 
 <style>
+    video{
+        position: absolute;
+        height: 1080px;
+        width: 100vw;
+        z-index: -1;
+    }
     h1{
         font-size: 100px;
         color: white;
@@ -15,6 +22,7 @@
     h2{
         color: white;
         font-size: 25px;
+        margin-bottom: 20px;
     }
     h1, h2{
         text-align: center;

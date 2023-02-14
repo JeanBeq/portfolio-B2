@@ -1,5 +1,5 @@
 <template>
-    <nav class="">
+    <nav id="navBar">
         <div class="nav-left">
             <p>PORTFOLIO</p>
         </div>
@@ -14,6 +14,7 @@
 
 <style>
     nav{
+        z-index: 10;
         background-color: #323232;
         width: 90%;
         margin: 0 auto;
@@ -24,17 +25,35 @@
         position: fixed;
         top: 10%;
         left: 50%;
-        transform:translate(-50%, -50%)
+        transform:translate(-50%, -50%);
+        transition: top 0.3s;
     }
-    a{
+    nav a{
         color: white;
         text-decoration: none;
         font-size: 18px;
         margin-right: 25px;
     }
-    p{
+    nav p{
         color: white;
         margin-left: 20px;
         font-size: 18px;
     }
 </style>
+
+<script>
+    export default{
+        mounted() {
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos < currentScrollPos) {
+                document.getElementById("navBar").style.top = "-10%";
+            } else {
+                document.getElementById("navBar").style.top = "10%";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        }
+    }
+</script>
