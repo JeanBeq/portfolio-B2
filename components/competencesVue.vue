@@ -37,7 +37,7 @@
     }
     .nav-comp-menu .active{
         background-color: #403d39;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
     }
     .cardComp img{
         height: 200px;

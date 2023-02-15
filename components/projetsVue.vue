@@ -1,15 +1,12 @@
 <template>
-    <div class="projets">
-        <h2>MES - <strong>PROJETS /</strong></h2>
+    <div class="allPj">
+        <div class="projets">
+        <div class="bande-pj"></div>
+        <h1>MES - <strong>PROJETS /</strong></h1>
         <p>Réalisés lors de stages ou lors de projets scolaires</p>
+        <div class="bande-pj-2" data-aos="fade-right"></div>
     </div>
-    <div class="sliderProjets">
-        <button id="but-left">
-            <p>-></p>
-        </button>
-        <button id="but-right">
-            <p>-/</p>
-        </button>
+    <div class="sliderProjets" data-aos="zoom-in">
         <div class="left-slider-pr">
             <img src="/img/rhb.png" alt="">
             <h2>Association Refuges Hautes Bauges</h2>
@@ -19,27 +16,36 @@
             <h2>Société de nettoyage ADB service</h2>
         </div>
     </div>
+    </div>
+    
 </template>
 
 <style>
-.projets h2{
-    color: white;
+.allPj{
+    background-color: white;
+}
+.projets{
+    position: relative;
+}
+.projets h1{
+    color: black;
     padding-top: 30px;
     font-size: 55px;
 }
 .projets p{
-    color: white;
-    margin-top: -30px;
+    color: black;
+    margin-top: -10px;
     text-align: center;
     margin-bottom: 20px;
 }
-.projets h2 strong{
+.projets h1 strong{
     font-weight: bold;
     text-transform: uppercase;
 }
 .sliderProjets{
     display: flex;
     position: relative;
+    margin-top: 40px;
 }
 .sliderProjets img{
     height: 500px;
@@ -69,16 +75,70 @@
     width: 50%;
     position: relative;
 }
-#but-right{
+.bande-pj{
+    background-color: #323232;
     position: absolute;
-    top: 50%;
-    right: 10%;
-    z-index: 1;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+    width: 600px;
+    height: 4px;
 }
-#but-left{
+.bande-pj-2{
+    background-color: #323232;
+    height: 4px;
+    width: 500px;
     position: absolute;
-    top: 50%;
-    left: 10%;
-    z-index: 1;
+    transform: translate(-50%, -50%);
+    top: 110%;
+    left: 50%;
+    margin-bottom: 100px;
 }
 </style>
+
+<script>
+import { gsap } from "gsap";
+// import { SplitText } from "gsap/SplitText";
+// gsap.registerPlugin(SplitText);  
+
+export default{
+    mounted() {
+        const line = document.querySelector(".bande-pj");
+        const line2 = document.querySelector(".bande-pj-2");
+
+        let previewTimeline = gsap.timeline({ delay: 0.5 , repeat: -1});
+
+        previewTimeline.fromTo(line, 
+        {
+            scaleX: 0,
+        }, 
+        {
+            transformOrigin: "right center",
+            scaleX: 1,
+            duration: 0.8,
+            ease: "none"
+        })
+        .to(line, {
+            transformOrigin: "left center",
+            scaleX: 0,
+            duration: 0.8,
+            ease: "none"
+        })
+
+
+      previewTimeline.fromTo(line2, {
+        scaleX: 0,
+      }, {
+        transformOrigin: "right center",
+        scaleX: 1,
+        duration: 0.8,
+        ease: "none",
+      }).to(line2, {
+        transformOrigin: "left center",
+        scaleX: 0,
+        duration: 0.8,
+        ease: "none"
+      })
+    }
+}
+</script>

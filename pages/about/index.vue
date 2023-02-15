@@ -1,4 +1,11 @@
 <template>
     <NavBar />
-    <h1>a propos</h1>
+    <BandeInfos />
+    <MainInfos />
 </template>
+
+<style>
+body{
+    background-color: #232323;
+}
+</style>
