@@ -17,4 +17,8 @@
         display: flex;
         justify-content: space-between;
     }
+    footer{
+        background-color: black;
+        height: 100px;
+    }
 </style>

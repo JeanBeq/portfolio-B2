@@ -7,9 +7,7 @@
         </div>
         <div class="nav-right">
             <a href="/" class="uppercase">Accueil</a>
-            <a href="/projets" class="uppercase">Projets</a>
             <a href="/about" class="uppercase">A propos</a>
-            <a href="/contact" class="uppercase">Contact</a>
         </div>
     </nav>
 </template>

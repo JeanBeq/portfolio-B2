@@ -5,6 +5,7 @@
         <BandeDefil />
         <CompetencesVue />
         <ProjetsVue />
+        <contactVue />
         <footerVue />
     </div>
 </template>

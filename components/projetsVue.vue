@@ -22,18 +22,18 @@
 
 <style>
 .allPj{
-    background-color: white;
+    background-color: #323232;
 }
 .projets{
     position: relative;
 }
 .projets h1{
-    color: black;
+    color: white;
     padding-top: 30px;
     font-size: 55px;
 }
 .projets p{
-    color: black;
+    color: white;
     margin-top: -10px;
     text-align: center;
     margin-bottom: 20px;
@@ -76,7 +76,7 @@
     position: relative;
 }
 .bande-pj{
-    background-color: #323232;
+    background-color: #f6bd60;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 20%;
@@ -85,7 +85,7 @@
     height: 4px;
 }
 .bande-pj-2{
-    background-color: #323232;
+    background-color: #f6bd60;
     height: 4px;
     width: 500px;
     position: absolute;
