@@ -17,9 +17,9 @@
                     <p>{{ selectedCompTxt }}</p>
                 </div>
                 <div class="buttonSlider">
-                    <button @click="prevPage" :disabled="currentPage === 1"><img src="/img/arrow_2.svg" alt=""></button>
+                    <button @click="prevPage" :disabled="currentPage === 0"><img src="/img/arrow_2.svg" alt=""></button>
                     <h3>Défiler</h3>
-                    <button @click="nextPage" :disabled="currentPage === totalPages"><img src="/img/arrow_1.svg" alt=""></button>
+                    <button @click="nextPage" :disabled="currentPage === totalPages-1"><img src="/img/arrow_1.svg" alt=""></button>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
     }
     .cardComp{
         position: relative;
-        width: 1200px;
+        width: 1000px;
         height: 400px;
         background-color: #D9D9D9;
         border-radius:20px;
@@ -132,11 +132,10 @@ export default {
   name: 'ListComp',
   data() {
     return{
-        currentPage: 1,
+        currentPage: 0,
         itemsPerPage: 1,
         translateValue: 0,
         selectedCompId: 0,
-        FirstComp: 0,
         selectedCompImg: "/img/htmllogo.png",
         selectedCompName: 'HTML',
         selectedCompTxt: "J'ai découvert l'Html au lycée grâce à la spécialité NSI, j'ai tout de suite eu un fort intérêt pour ce langage et pour le développement orienté WEB",
@@ -189,33 +188,25 @@ export default {
   },
   methods: {
     prevPage() {
-      if (this.currentPage > 1) {
+        console.log(this.totalPages)
+      if (this.currentPage >= 0) {
         this.currentPage--;
-        this.translateValue += 100 / this.totalPages;
-        console.log('change page -');
+        this.selectedCompImg = this.comps[this.currentPage].src;
+        this.selectedCompTxt = this.comps[this.currentPage].txt;
       }
     },
     nextPage() {
-      if (this.currentPage < this.totalPages) {
+      if (this.currentPage < this.totalPages -1) {
         this.currentPage++;
-        this.translateValue -= 100 / this.totalPages;
-        console.log('change page +');
+        this.selectedCompImg = this.comps[this.currentPage].src;
+        this.selectedCompTxt = this.comps[this.currentPage].txt;
       }
     },
   },
   computed: {
     totalPages() {
-      return Math.ceil(this.comps.length / this.itemsPerPage);
+      return Math.ceil(this.comps.length);
     },
   },
-//   methods:{
-//     selectComp(comp) {
-//         this.selectedCompId = comp.id
-//         this.selectedCompName = comp.name
-//         this.selectedCompTxt = comp.txt
-//         const selectedComp = this.comps.find(element => element.id === this.selectedCompId);
-//         this.selectedCompImg = selectedComp.src
-//     }
-//   }
 }
 </script>
