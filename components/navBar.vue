@@ -3,11 +3,12 @@
     <div class="cursor2"></div>
     <nav id="navBar">
         <div class="nav-left">
-            <p>PORTFOLIO</p>
+            <img src="/img/logo.png" alt="">
         </div>
         <div class="nav-right">
             <a href="/" class="uppercase">Accueil</a>
             <a href="/about" class="uppercase">A propos</a>
+            <a href="/contact" class="uppercase">Contact</a>
         </div>
     </nav>
 </template>
@@ -76,6 +77,9 @@
     height: 50px;
     opacity: .5;
     z-index: 100;
+    }
+    .nav-left{
+        width: 30px;
     }
 </style>
 

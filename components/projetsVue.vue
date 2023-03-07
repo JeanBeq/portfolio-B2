@@ -66,6 +66,9 @@
     color: #f6bd60;
     font-weight: bold;
     font-size: 30px;
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 15px;
 }
 .left-slider-pr{
     position: relative;

@@ -1,6 +1,6 @@
 <template>
     <div class="container-main">
-        <video src="/video/video_background.mp4" autoplay loop muted></video>
+        <video src="/video/video_background2.mp4" autoplay loop muted></video>
         <h1>Developpeur web</h1>
         <h2>Jean Béquilleux - Web Developpeur situé à Annecy en France</h2>
     </div>
