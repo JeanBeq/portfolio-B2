@@ -53,18 +53,6 @@
         display: flex;
         flex-direction: row;
     }
-    
-    .nav-comp-menu a{
-        background-color: #a5a5a5;
-        color: black;
-        width: 100%;
-        height: 50px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all ease-in-out 0.2s;
-    }
     .competencesShow{
         width: 95%;
         margin: 0 auto;
@@ -121,7 +109,28 @@
     .cardComp .buttonSlider button img{
         height: 24px;
     }
-    
+    @media screen and (max-width: 991px) {
+        .cardComp{
+            width: 90%;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+        }
+        .cardComp .buttonSlider{
+            left: 50%;
+            top: 100%;
+        }
+        .cardComp .left-comp-card img{
+            height: 200px;
+            width: 200px;
+            margin-left: 0px;
+            margin-top: 40px;
+        }
+        .right-comp-card p{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
 </style>
 
 <script lang="ts">

@@ -104,7 +104,7 @@
             display: flex;
             justify-content: space-between;
             position: fixed;
-            top: 0%;
+            top: 5%;
             left: 50%;
             transform:translate(-50%, -50%);
         }
@@ -134,6 +134,11 @@
         }
         nav {
             padding: 0 20px;
+        }
+        .nav-left{
+            width: 30px;
+            display: flex;
+            align-items: center;
         }
 }
 </style>
@@ -207,7 +212,12 @@ import { Menu } from 'lucide-vue-next';
             if (prevScrollpos < currentScrollPos) {
                 document.getElementById("navBar").style.top = "-10%";
             } else {
-                document.getElementById("navBar").style.top = "10%";
+                if (window.innerWidth < 960) {
+                    var navHeightValue = '5%'
+                } else {
+                    var navHeightValue = '10%'
+                }
+                document.getElementById("navBar").style.top = navHeightValue;
             }
             prevScrollpos = currentScrollPos;
             }

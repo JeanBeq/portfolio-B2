@@ -62,20 +62,6 @@
 .sliderProjets img:hover{
     filter: blur(5px);
 }
-/* .sliderProjets h2{
-    position: absolute;
-    text-align: center;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    color: #f6bd60;
-    font-weight: bold;
-    font-size: 30px;
-    background-color: #323232;
-    padding: 10px;
-    border-radius: 15px;
-} */
 .sliderProjets .textPopUp2::before, .sliderProjets .textPopUp2 h2{
     content: "";
     position: absolute;
@@ -122,6 +108,14 @@
     top: 110%;
     left: 50%;
     margin-bottom: 100px;
+}
+@media screen and (max-width: 991px) {
+    .bande-pj{
+        width: 100vw;
+    }
+    .bande-pj-2{
+        width: 100vw;
+    }
 }
 </style>
 

@@ -35,4 +35,12 @@
         align-items: center;
         justify-content: center;
     }
+    @media screen and (max-width: 991px) {
+        h1{
+            font-size:12vw
+        }
+        h2{
+            font-size: 5vw;
+        }
+    }
 </style>
