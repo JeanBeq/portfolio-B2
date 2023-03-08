@@ -9,11 +9,15 @@
     <div class="sliderProjets" data-aos="zoom-in">
         <div class="left-slider-pr">
             <img src="/img/rhb.png" alt="">
-            <h2>Association Refuges Hautes Bauges</h2>
+            <div class="textPopUp">
+                <h2>Association Refuges Hautes Bauges</h2>
+            </div>
         </div>
         <div class="right-slider-pr">
             <img src="/img/adb.png" alt="">
-            <h2>Société de nettoyage ADB service</h2>
+            <div class="textPopUp2">
+                <h2>Société de nettoyage ADB service</h2>
+            </div>
         </div>
     </div>
     </div>
@@ -58,7 +62,7 @@
 .sliderProjets img:hover{
     filter: blur(5px);
 }
-.sliderProjets h2{
+/* .sliderProjets h2{
     position: absolute;
     text-align: center;
     bottom: 2%;
@@ -71,16 +75,34 @@
     background-color: #323232;
     padding: 10px;
     border-radius: 15px;
+} */
+.sliderProjets .textPopUp2::before, .sliderProjets .textPopUp2 h2{
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.sliderProjets .textPopUp2:hover{
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: 100%;
 }
 .left-slider-pr{
     position: relative;
     width: 50%;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .right-slider-pr{
     width: 50%;
     position: relative;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .bande-pj{
     background-color: #f6bd60;
@@ -131,7 +153,6 @@ export default{
             duration: 0.8,
             ease: "none"
         })
-
 
       previewTimeline.fromTo(line2, {
         scaleX: 0,

@@ -5,6 +5,12 @@
         <div class="nav-left">
             <img src="/img/logo.png" alt="">
         </div>
+        <div class="menu-icon">
+            <Menu 
+            color="white"
+            :size="32"
+            />
+        </div>
         <div class="nav-right">
             <a href="/" class="uppercase">Accueil</a>
             <a href="/about" class="uppercase">A propos</a>
@@ -81,11 +87,62 @@
     .nav-left{
         width: 30px;
     }
+    .menu-icon{
+        display: none;
+    }
+    @media screen and (max-width: 991px) {
+        .nav-right {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        .menu-icon i {
+            color: #fff;
+            font-size: 28px;
+        }
+
+        .menu-icon:hover i {
+            color: #f5f5f5;
+        }
+
+        nav {
+            padding: 0 20px;
+        }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 999;
+  }
+
+  .menu.active li {
+    margin: 20px 0;
+  }
+
+  .menu.active li a {
+    font-size: 22px;
+    margin: 0;
+  }
+}
 </style>
+
+<script setup>
+import { Menu } from 'lucide-vue-next';
+</script>
 
 <script>
     export default{
         mounted() {
+
             
             var cursor = document.querySelector('.cursor');
             var cursorinner = document.querySelector('.cursor2');

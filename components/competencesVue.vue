@@ -1,6 +1,6 @@
 <template>
     <div class="bandeCompetences">
-        <h2>MES - <strong>compétences</strong></h2>
+        <h2 data-aos="fade-up">MES - <strong>compétences</strong></h2>
         <div class="competencesShow">
             <div v-for="(comp, index) in comps" :key="index" class="slide">
             </div>
@@ -9,7 +9,7 @@
                     <img :src="selectedCompImg" alt="">
                 </div>
                 <div class="right-comp-card">
-                    <p>{{ selectedCompTxt }}</p>
+                    <p data-aos="fade-left">{{ selectedCompTxt }}</p>
                 </div>
                 <div class="buttonSlider">
                     <button @click="prevPage" :disabled="currentPage === 0">
@@ -125,6 +125,8 @@
 </style>
 
 <script lang="ts">
+
+
 
 export default {
   name: 'ListComp',
