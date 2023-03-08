@@ -16,7 +16,7 @@
 <style>
     nav{
         z-index: 10;
-        background-color: #323232;
+        background-color: #484848;
         width: 90%;
         margin: 0 auto;
         padding: 15px;

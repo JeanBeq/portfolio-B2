@@ -2,10 +2,12 @@
     <div class="main-infos">
         <div class="main-infos-mid">
             <h1>A propos de moi</h1>
-            <h2 id="text-anim">Developpeur web - web design</h2>
+            <h2 >Développeur web</h2>
             <div class="mainInfosMidBottom">
                 <div class="main-infos-mid-left">
-                <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus felis, venenatis nec est eget, rutrum finibus orci. Etiam facilisis, ipsum eget vulputate ornare, lorem libero vulputate purus, in convallis dolor nibh sit amet nisl. In lacus est, porttitor eget purus non, fermentum hendrerit lacus. Phasellus euismod nunc nulla, vel semper ante egestas id. Nullam a leo ligula. Vivamus urna lectus, rhoncus quis cursus id, laoreet sit amet ipsum. Maecenas elementum ligula ac fringilla facilisis.</p>
+                <p id="desc">Bonjour à tous ! Je m'appelle Jean j'ai 19 ans et je viens d'haute savoie. J'étudie à My Digital School à Annecy, ou j'apprends le développement web ainsi que le design et le marketing digital à travers un bachelor web & multimédias. Je me suis orienté dans le développement web au cours de ma deuxième année de bachelor. J'ai eu l'occasion de mettre en avant mes compétences en réalisant plusieurs stages. <br><br> Lors de ma formation j'ai eu l'occasion d'apprendre plusieurs langages de programmation. Je maitrise l'HTML, le CSS, le JS avec les frameworks Vue et Nuxt, le PHP avec le framework symfony, la conception UML et le SQL. Je m'aitrise aussi les CMS WordPress et Wix que j'ai pu découvrir lors de projets scolaires ou stages. <br><br>
+                En plus de cela grâce à ma formation pluridisciplinaire je maitrise aussi la suite Adobe, Figma et la suite Microsoft
+                </p> 
             </div>
             <div class="main-infos-mid-right">
                 <img src="/img/jean.png" alt="" class="mainImg">
@@ -14,10 +16,10 @@
         </div>
         <div class="main-infos-img">
             <img src="/img/pic_about.jpg" alt="" id="pic-about">
-            <h2>MES PASSIONS</h2>
+            <h2 id="text-anim">MES PASSIONS</h2>
         </div>
         <div class="main-infos-txt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus felis, venenatis nec est eget, rutrum finibus orci. Etiam facilisis, ipsum eget vulputate ornare, lorem libero vulputate purus, in convallis dolor nibh sit amet nisl. In lacus est, porttitor eget purus non, fermentum hendrerit lacus. Phasellus euismod nunc nulla, vel semper ante egestas id. Nullam a leo ligula. Vivamus urna lectus, rhoncus quis cursus id, laoreet sit amet ipsum. Maecenas elementum ligula ac fringilla facilisis.</p>
+            <p>Depuis petit je suis passioné par l'automobile et les sports motorisés en général. J'ai eu l'occasion de pouvoir assister à de nombreux événements dans de nombreux pays. En plus de cela je suis passioné par la photographie et la vidéo depuis des années et je combine ces deux passions en allant à des evenements liés au sport automobile pour prendres des photos. Je pratique aussi plusieurs sports. Je pratique la musculation depuis plus d'un an, je fais du ski alpin depuis tout jeune</p>
         </div>
     </div>
 </template>
@@ -87,11 +89,10 @@
 .main-infos-mid-right img{
     -webkit-box-shadow: -15px -15px 0px 0px #F6BD60; 
     box-shadow: -15px -15px 0px 0px #F6BD60;
-    transition: ease-in-out 0.2s all;
+    display: inline-block;
 }
 .main-infos-mid-right img:hover{
-    -webkit-box-shadow: 0px 0px 0px 0px #F6BD60; 
-    box-shadow: 0px 0px 0px 0px #F6BD60;
+    transform: translate(-15px -15px 0px 0px);
 }
 .main-infos-mid-left{
     display: flex;
@@ -147,15 +148,13 @@ import { onMounted } from "vue";
                 rotation: 10,
                 },
                 {
-                duration: 1.5,
+                duration: 0.5,
                 opacity: 1,
                 y: 0,
-                rotation: -3,
-                ease: "power3.inOut",
-                delay: 2.5,
+                rotation: 0,
+                ease: "power2.inOut",
                 }
             );
-
         },
         // created() {
         //     setInterval(this.change, 3000);

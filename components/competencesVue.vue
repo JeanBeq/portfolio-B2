@@ -2,11 +2,6 @@
     <div class="bandeCompetences">
         <h2>MES - <strong>compétences</strong></h2>
         <div class="competencesShow">
-            <!-- <div class="nav-comp-menu">
-                <a v-for="comp in comps" :key="comp.id" @click="selectComp(comp)" :class="{active: comp.id === selectedCompId }">
-                    {{ comp.name }}
-                </a>
-            </div> -->
             <div v-for="(comp, index) in comps" :key="index" class="slide">
             </div>
             <div class="cardComp">
@@ -17,7 +12,7 @@
                     <p>{{ selectedCompTxt }}</p>
                 </div>
                 <div class="buttonSlider">
-                    <button @click="prevPage" :disabled="currentPage === 0"><img src="/img/arrow_2.svg" alt=""></button>
+                    <button @click="prevPage" :disabled="currentPage === 0"><img src="/img/arrow_2.svg" alt="" id="arrowPrev"></button>
                     <h3>Défiler</h3>
                     <button @click="nextPage" :disabled="currentPage === totalPages-1"><img src="/img/arrow_1.svg" alt=""></button>
                 </div>
@@ -159,7 +154,7 @@ export default {
                 name: 'JS',
                 description: 'JS 1',
                 src: "/img/jslogo.png",
-                txt: "J'ai découvert le Javascript en première année d'études à MyDigitalSchool et de même que tous les autres langages dit Front j'ai accroché directement."
+                txt: "J'ai découvert le Javascript en première année d'études à My Digital School et de même que tous les autres langages dit Front j'ai accroché directement."
                 
             },
             {
@@ -167,7 +162,7 @@ export default {
                 name: 'PHP',
                 description: 'PHP 1',
                 src: "/img/phplogo.png",
-                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+                txt: "J'ai découvert le PHP lors de ma première année d'étude à My Digital School"
             },
             {
                 id: 4,
@@ -181,6 +176,27 @@ export default {
                 name: 'Python',
                 description: 'Py 1',
                 src: "/img/pylogo.png",
+                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+            },
+            {
+                id: 6,
+                name: 'WordPress',
+                description: 'Wp',
+                src: "/img/wplogo.png",
+                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+            },
+            {
+                id: 7,
+                name: 'Vue js',
+                description: 'Wp',
+                src: "/img/vuelogo.png",
+                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+            },
+            {
+                id: 7,
+                name: 'Symfony',
+                description: 'Symfony',
+                src: "/img/symflogo.png",
                 txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
             },
         ]
