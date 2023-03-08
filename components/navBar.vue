@@ -127,6 +127,7 @@
         .nav-right.active a {
             font-size: 22px;
             margin: 0;
+            padding: 5px;
         }
         .menu-icon {
             display: block;

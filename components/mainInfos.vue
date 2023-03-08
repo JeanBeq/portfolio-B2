@@ -37,9 +37,9 @@
 }
 .main-infos .main-infos-mid h2{
     text-align: center;
-    font-size: 60px;
+    font-size: 8vw;
     font-weight: bold;
-    margin-top: -25PX;
+    margin-top: -20PX;
 }.main-infos .main-infos-mid h1{
     text-align: center;
     font-weight: bold;
@@ -110,9 +110,40 @@
     }
     .main-infos-mid h2{
         font-size: 15vw;
+        margin-top: 15px;
     }
     .main-infos-mid-left p{
         font-size: 3vw;
+    }
+    .mainInfosMidBottom{
+        flex-direction:column-reverse;
+        margin: 10px;
+    }
+    .main-infos .main-infos-mid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mainInfosMidBottom{
+        align-items: center;
+    }
+    .main-infos-mid-left{
+        width: 90%;
+    }
+    .main-infos-mid-right img{
+        margin-top: 20px;
+    }
+    .main-infos-txt p{
+        font-size: 3vw;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+    .main-infos-txt{
+        padding-left: 0;
+        padding-right: 0;
+        
     }
 }
 </style>
