@@ -46,44 +46,6 @@
         margin-left: 20px;
         font-size: 18px;
     }
-    .cursor {
-      z-index: 100;
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
-      border: 1px solid white;
-      transition: all 200ms ease-out;
-      position: fixed;
-      pointer-events: none;
-      left: 0;
-      top: 0;
-      transform: translate(calc(-50% + 15px), -50%);
-    }
-    .cursor2 {
-      z-index: 99;
-      width: 15px;
-      height: 15px;
-      border-radius: 100%;
-      background-color: grey;
-      opacity: .3;
-      position: fixed;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      transition: width .3s, height .3s, opacity .3s;
-    }
-    .hover {
-      width: 70px;
-      height: 70px;
-      background-color: #f6bd60 ;
-      opacity: 0.5;
-      z-index: 100;
-    }
-    .cursorinnerhover {
-    width: 50px;
-    height: 50px;
-    opacity: .5;
-    z-index: 100;
-    }
     .nav-left{
         width: 30px;
     }
@@ -92,6 +54,46 @@
     }
     .nav-right {
         transition:2s all ease-in-out;
+    }
+    @media screen and (min-width: 991px) {
+        .cursor {
+            z-index: 100;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            border: 1px solid white;
+            transition: all 200ms ease-out;
+            position: fixed;
+            pointer-events: none;
+            left: 0;
+            top: 0;
+            transform: translate(calc(-50% + 15px), -50%);
+        }
+        .cursor2 {
+            z-index: 99;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: grey;
+            opacity: .3;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            transition: width .3s, height .3s, opacity .3s;
+        }
+        .hover {
+            width: 70px;
+            height: 70px;
+            background-color: #f6bd60 ;
+            opacity: 0.5;
+            z-index: 100;
+        }
+        .cursorinnerhover {
+            width: 50px;
+            height: 50px;
+            opacity: .5;
+            z-index: 100;
+        }
     }
     @media screen and (max-width: 991px) {
         nav{
