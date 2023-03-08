@@ -12,9 +12,9 @@
                     <p>{{ selectedCompTxt }}</p>
                 </div>
                 <div class="buttonSlider">
-                    <button @click="prevPage" :disabled="currentPage === 0"><img src="/img/arrow_2.svg" alt="" id="arrowPrev"></button>
+                    <button @click="prevPage" :disabled="currentPage === 0"><img src="./img/arrow_2.svg" alt="" id="arrowPrev"></button>
                     <h3>Défiler</h3>
-                    <button @click="nextPage" :disabled="currentPage === totalPages-1"><img src="/img/arrow_1.svg" alt=""></button>
+                    <button @click="nextPage" :disabled="currentPage === totalPages-1"><img src="./img/arrow_1.svg" alt=""></button>
                 </div>
             </div>
         </div>
