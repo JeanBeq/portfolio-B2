@@ -9,8 +9,9 @@
 <style>
     video{
         position: absolute;
-        height: 1080px;
+        height: 100vh;
         width: 100vw;
+        object-fit: cover;
         z-index: -1;
     }
     h1{

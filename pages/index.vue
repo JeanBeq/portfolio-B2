@@ -2,7 +2,7 @@
     <div>
         <NavBar />
         <MainHome />
-        <BandeDefil />
+        <!-- <BandeDefil /> -->
         <CompetencesVue />
         <ProjetsVue />
         <footerVue />

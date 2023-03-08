@@ -2,16 +2,16 @@
     <div class="cursor"></div>
     <div class="cursor2"></div>
     <nav id="navBar">
-        <div class="nav-left">
+        <div class="nav-left" >
             <img src="/img/logo.png" alt="">
         </div>
-        <div class="menu-icon">
+        <div class="menu-icon" @click="toggleMenu">
             <Menu 
             color="white"
             :size="32"
             />
         </div>
-        <div class="nav-right">
+        <div class="nav-right" :class="{ active: menuOpen }">
             <a href="/" class="uppercase">Accueil</a>
             <a href="/about" class="uppercase">A propos</a>
             <a href="/contact" class="uppercase">Contact</a>
@@ -90,48 +90,49 @@
     .menu-icon{
         display: none;
     }
+    .nav-right {
+        transition:2s all ease-in-out;
+    }
     @media screen and (max-width: 991px) {
+        nav{
+            width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 0%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+        }
         .nav-right {
             display: none;
         }
-
+        .nav-right.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 999;
+            transition:2s all ease-in-out;
+            border-radius: 0px 0px 15px 15px;
+        }
+        .nav-right.active a {
+            font-size: 22px;
+            margin: 0;
+        }
         .menu-icon {
             display: block;
+            padding: 15px;
         }
-
-        .menu-icon i {
-            color: #fff;
-            font-size: 28px;
-        }
-
-        .menu-icon:hover i {
-            color: #f5f5f5;
-        }
-
         nav {
             padding: 0 20px;
         }
-
-  .menu.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 999;
-  }
-
-  .menu.active li {
-    margin: 20px 0;
-  }
-
-  .menu.active li a {
-    font-size: 22px;
-    margin: 0;
-  }
 }
 </style>
 
@@ -141,7 +142,26 @@ import { Menu } from 'lucide-vue-next';
 
 <script>
     export default{
+        data() {
+            return{
+                menuOpen: false
+            }
+        },
+        methods: {
+            toggleMenu: function() {
+            this.menuOpen = !this.menuOpen;
+            }
+        },
         mounted() {
+
+            window.addEventListener('DOMContentLoaded', function() {
+            var menuIcon = document.querySelector('.menu-icon');
+            var menu = document.querySelector('.menu');
+
+            menuIcon.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+            });
 
             
             var cursor = document.querySelector('.cursor');
@@ -149,26 +169,26 @@ import { Menu } from 'lucide-vue-next';
             var a = document.querySelectorAll('a');
 
             document.addEventListener('mousemove', function(e){
-            var x = e.clientX;
-            var y = e.clientY;
-            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+                var x = e.clientX;
+                var y = e.clientY;
+                cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
             });
 
             document.addEventListener('mousemove', function(e){
-            var x = e.clientX;
-            var y = e.clientY;
-            cursorinner.style.left = x + 'px';
-            cursorinner.style.top = y + 'px';
+                var x = e.clientX;
+                var y = e.clientY;
+                cursorinner.style.left = x + 'px';
+                cursorinner.style.top = y + 'px';
             });
 
             document.addEventListener('mousedown', function(){
-            cursor.classList.add('click');
-            cursorinner.classList.add('cursorinnerhover')
+                cursor.classList.add('click');
+                cursorinner.classList.add('cursorinnerhover')
             });
 
             document.addEventListener('mouseup', function(){
-            cursor.classList.remove('click')
-            cursorinner.classList.remove('cursorinnerhover')
+                cursor.classList.remove('click')
+                cursorinner.classList.remove('cursorinnerhover')
             });
 
             a.forEach(item => {

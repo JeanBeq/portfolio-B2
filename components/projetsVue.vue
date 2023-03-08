@@ -4,7 +4,7 @@
         <div class="bande-pj"></div>
         <h1>MES - <strong>PROJETS /</strong></h1>
         <p>Réalisés lors de stages ou lors de projets scolaires</p>
-        <div class="bande-pj-2" data-aos="fade-right"></div>
+        <div class="bande-pj-2"></div>
     </div>
     <div class="sliderProjets" data-aos="zoom-in">
         <div class="left-slider-pr">

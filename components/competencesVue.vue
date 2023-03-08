@@ -167,14 +167,14 @@ export default {
                 name: 'PHP',
                 description: 'PHP 1',
                 src: "/img/phplogo.png",
-                txt: "J'ai découvert le PHP lors de ma première année d'étude à My Digital School"
+                txt: "J'ai découvert le PHP lors de ma première année d'étude à My Digital School. J'ai pu faire de nombreux projets en PHP."
             },
             {
                 id: 4,
                 name: 'SQL',
                 description: 'sql 1',
                 src: "/img/sqllogo.png",
-                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+                txt: "J'ai appris le SQL en même temps que le PHP"
             },
             {
                 id: 5,
