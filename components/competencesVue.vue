@@ -16,7 +16,7 @@
                         <img src="/img/Arrow2.svg" alt=""  id="arrowPrev">
                     </button>
                     <h3>Défiler</h3>
-                    <button @click="nextPage" :disabled="currentPage === totalPages-1"><img src="~/img/Arrow1.svg" alt=""></button>
+                    <button @click="nextPage" :disabled="currentPage === totalPages-1"><img src="/img/Arrow1.svg" alt=""></button>
                 </div>
             </div>
         </div>
