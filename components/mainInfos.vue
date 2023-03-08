@@ -145,6 +145,9 @@
         padding-right: 0;
         
     }
+    .main-infos-img h2{
+        font-size: 12vw;
+    }
 }
 </style>
 

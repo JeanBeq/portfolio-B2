@@ -97,7 +97,7 @@
     }
     @media screen and (max-width: 991px) {
         nav{
-            width: 100%;
+            width: 100vw;
             margin: 0 auto;
             padding: 15px;
             border-radius: 10px;

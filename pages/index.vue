@@ -14,6 +14,7 @@
     body{
         cursor: none;
         background-color: #323232;
+        overflow-x: hidden;
     }
     p, h1, h2, h3, a{
         font-family: 'DM Sans', sans-serif;
