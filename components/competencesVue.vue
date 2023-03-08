@@ -187,28 +187,28 @@ export default {
                 name: 'SQL',
                 description: 'sql 1',
                 src: "/img/sqllogo.png",
-                txt: "J'ai appris le SQL en même temps que le PHP"
+                txt: "J'ai appris le SQL en même temps que le PHP lors de ma formation."
             },
             {
                 id: 5,
                 name: 'Python',
                 description: 'Py 1',
                 src: "/img/pylogo.png",
-                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+                txt: "J'ai appris le Python grâce à la spécialité NSI au lycée ou j'ai pu faire de nombreux petits projets et j'ai continué en parralele pour des petits projets personnels"
             },
             {
                 id: 6,
                 name: 'WordPress',
                 description: 'Wp',
                 src: "/img/wplogo.png",
-                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+                txt: "J'ai appris à utiliser le CMS WordPress au sein de ma formation à My Digital School, j'ai pu approfondir ces conaissances en réalisant des projets scolaire via ces outils."
             },
             {
                 id: 7,
                 name: 'Vue js',
                 description: 'Wp',
                 src: "/img/vuelogo.png",
-                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+                txt: "J'ai découvert le framework Vue.js en deuxième année de bachelor web & multimédia, j'ai pu réaliser plusieurs projets dessus et ce portfolio est réalisé avec Vue.js et Nuxt js"
             },
             {
                 id: 7,
