@@ -1,6 +1,6 @@
 <template>
     <div class="container-main">
-        <video src="/video/video_background2.mp4" autoplay loop muted></video>
+        <video src="/video/video_background2.mp4" autoplay loop muted playsinline></video>
         <h1>Developpeur web</h1>
         <h2>Jean Béquilleux - Web Developpeur situé à Annecy en France</h2>
     </div>
@@ -10,9 +10,10 @@
     video{
         position: absolute;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         object-fit: cover;
         z-index: -1;
+        overflow-x: hidden;
     }
     h1{
         font-size: 100px;
@@ -34,6 +35,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow-x: hidden;
     }
     @media screen and (max-width: 991px) {
         h1{

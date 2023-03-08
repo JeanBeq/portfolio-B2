@@ -55,8 +55,8 @@
     transition: background-size 0.2s ease-out; 
 }
 .mainContact .topContact a:hover {
-  background-size: 100% 100%; /* on augmente la hauteur du dégradé pour remplir le background du lien */
-  color: #fff; /* on change la couleur de texte du lien lorsque le background est rempli */
+  background-size: 100% 100%; 
+  color: #fff; 
 }
 .mainContact .topContact a:hover{
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -99,6 +99,11 @@
     fill: #f6bd60;
     transform: translate(0, 0);
   }
+}
+@media screen and (max-width: 991px){
+  .mainContact .topContact h1{
+    font-size: 12vw;
+}
 }
 </style>
 

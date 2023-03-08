@@ -119,7 +119,7 @@
         .cardComp .buttonSlider{
             left: 50%;
             top: 100%;
-            width: 60%;
+            width: 200px;
         }
         .cardComp .left-comp-card img{
             height: 200px;

@@ -97,9 +97,9 @@
     }
     @media screen and (max-width: 991px) {
         nav{
-            width: 100vw;
+            width: 100%;
             margin: 0 auto;
-            padding: 15px;
+            padding: 0 20px;
             border-radius: 10px;
             display: flex;
             justify-content: space-between;
