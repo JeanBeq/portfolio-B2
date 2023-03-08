@@ -36,7 +36,7 @@
 .messagedefilant div span {
   animation: defilement 10s infinite linear;
   background: #232323;
-  color: grey;
+  color: #808080;
   padding: 15px;
 }
  

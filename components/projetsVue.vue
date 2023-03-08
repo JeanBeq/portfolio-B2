@@ -45,16 +45,18 @@
 .sliderProjets{
     display: flex;
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
+    width: 90%;
+    margin: 0 auto;
 }
 .sliderProjets img{
     height: 500px;
     object-fit: cover;
-    filter: blur(3px);
+    filter: blur(0px);
     transition: all ease-in-out 0.2s;
 }
 .sliderProjets img:hover{
-    filter: blur(0px);
+    filter: blur(5px);
 }
 .sliderProjets h2{
     position: absolute;
@@ -66,14 +68,19 @@
     color: #f6bd60;
     font-weight: bold;
     font-size: 30px;
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 15px;
 }
 .left-slider-pr{
     position: relative;
     width: 50%;
+    margin-top: 50px;
 }
 .right-slider-pr{
     width: 50%;
     position: relative;
+    margin-top: 50px;
 }
 .bande-pj{
     background-color: #f6bd60;

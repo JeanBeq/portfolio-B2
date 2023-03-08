@@ -2,10 +2,7 @@
     <div class="bandeCompetences">
         <h2>MES - <strong>compétences</strong></h2>
         <div class="competencesShow">
-            <div class="nav-comp-menu">
-                <a v-for="comp in comps" :key="comp.id" @click="selectComp(comp)" :class="{active: comp.id === selectedCompId }">
-                    {{ comp.name }}
-                </a>
+            <div v-for="(comp, index) in comps" :key="index" class="slide">
             </div>
             <div class="cardComp">
                 <div class="left-comp-card">
@@ -14,7 +11,11 @@
                 <div class="right-comp-card">
                     <p>{{ selectedCompTxt }}</p>
                 </div>
-                <a href="/about" class="shadow-2xl">En savoir plus</a>
+                <div class="buttonSlider">
+                    <button @click="prevPage" :disabled="currentPage === 0"><img src="/img/arrow_2.svg" alt="" id="arrowPrev"></button>
+                    <h3>Défiler</h3>
+                    <button @click="nextPage" :disabled="currentPage === totalPages-1"><img src="/img/arrow_1.svg" alt=""></button>
+                </div>
             </div>
         </div>
     </div>
@@ -35,33 +36,24 @@
         font-weight: bold;
         text-transform: uppercase;
     }
-    .nav-comp-menu .active{
-        background-color: #403d39;
-        /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
-    }
-    .cardComp img{
-        height: 200px;
+    .cardComp .left-comp-card img{
+        height: 300px;
+        width: 300px;
         margin-left: 40px;
         transition: all ease-in-out 0.2s;
     }
     .cardComp{
         position: relative;
         width: 1000px;
-        background-color: #403d39;
-        border-radius: 0 15px 15px 0;
+        height: 400px;
+        background-color: #D9D9D9;
+        border-radius:20px;
         display: flex;
         flex-direction: row;
     }
-    .nav-comp-menu{
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
     .nav-comp-menu a{
         background-color: #a5a5a5;
-        color: white;
+        color: black;
         width: 100%;
         height: 50px;
         text-align: center;
@@ -70,27 +62,25 @@
         justify-content: center;
         transition: all ease-in-out 0.2s;
     }
-    .nav-comp-menu a:first-child{
-        border-radius: 15px 0 0 0;
-    }
-    .nav-comp-menu a:last-child{
-        border-radius: 0 0 0 15px;
-    }
     .competencesShow{
         width: 95%;
         margin: 0 auto;
         padding-top: 30px;
         display: flex;
+        justify-content: center;
         flex-direction: row;
         margin-bottom: 30px;
     }
     .right-comp-card{
         position: relative;
+        width: 80%;
     }
     .right-comp-card p{
-        margin-left: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
         margin-top: 50px;
-        width: 600px;
+        width: 90%;
+        color: black;
     }
     .cardComp a{
         border-radius: 30px;
@@ -99,14 +89,36 @@
         position: absolute;
         right: 40px;
         bottom: 40px;
-        color: white;
     }
     .left-comp-card{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 300px;
     }
+    .cardComp .buttonSlider{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 88%;
+        top: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #f6bd60;
+        width: 400px;
+        border-radius: 10px;
+        justify-content: space-around;
+    }
+    .cardComp .buttonSlider button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background: transparent;
+    }
+    .cardComp .buttonSlider button img{
+        height: 24px;
+    }
+    
 </style>
 
 <script lang="ts">
@@ -115,8 +127,10 @@ export default {
   name: 'ListComp',
   data() {
     return{
+        currentPage: 0,
+        itemsPerPage: 1,
+        translateValue: 0,
         selectedCompId: 0,
-        FirstComp: 0,
         selectedCompImg: "/img/htmllogo.png",
         selectedCompName: 'HTML',
         selectedCompTxt: "J'ai découvert l'Html au lycée grâce à la spécialité NSI, j'ai tout de suite eu un fort intérêt pour ce langage et pour le développement orienté WEB",
@@ -140,7 +154,7 @@ export default {
                 name: 'JS',
                 description: 'JS 1',
                 src: "/img/jslogo.png",
-                txt: "J'ai découvert le Javascript en première année d'études à MyDigitalSchool et de même que tous les autres langages dit Front j'ai accroché directement."
+                txt: "J'ai découvert le Javascript en première année d'études à My Digital School et de même que tous les autres langages dit Front j'ai accroché directement."
                 
             },
             {
@@ -148,7 +162,7 @@ export default {
                 name: 'PHP',
                 description: 'PHP 1',
                 src: "/img/phplogo.png",
-                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+                txt: "J'ai découvert le PHP lors de ma première année d'étude à My Digital School"
             },
             {
                 id: 4,
@@ -164,17 +178,51 @@ export default {
                 src: "/img/pylogo.png",
                 txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
             },
+            {
+                id: 6,
+                name: 'WordPress',
+                description: 'Wp',
+                src: "/img/wplogo.png",
+                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+            },
+            {
+                id: 7,
+                name: 'Vue js',
+                description: 'Wp',
+                src: "/img/vuelogo.png",
+                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+            },
+            {
+                id: 7,
+                name: 'Symfony',
+                description: 'Symfony',
+                src: "/img/symflogo.png",
+                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+            },
         ]
     }
   },
-  methods:{
-    selectComp(comp) {
-        this.selectedCompId = comp.id
-        this.selectedCompName = comp.name
-        this.selectedCompTxt = comp.txt
-        const selectedComp = this.comps.find(element => element.id === this.selectedCompId);
-        this.selectedCompImg = selectedComp.src
-    }
-  }
+  methods: {
+    prevPage() {
+        console.log(this.totalPages)
+      if (this.currentPage >= 0) {
+        this.currentPage--;
+        this.selectedCompImg = this.comps[this.currentPage].src;
+        this.selectedCompTxt = this.comps[this.currentPage].txt;
+      }
+    },
+    nextPage() {
+      if (this.currentPage < this.totalPages -1) {
+        this.currentPage++;
+        this.selectedCompImg = this.comps[this.currentPage].src;
+        this.selectedCompTxt = this.comps[this.currentPage].txt;
+      }
+    },
+  },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.comps.length);
+    },
+  },
 }
 </script>
