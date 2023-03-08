@@ -51,6 +51,7 @@
         display: flex;
         flex-direction: row;
     }
+    
     .nav-comp-menu a{
         background-color: #a5a5a5;
         color: black;
