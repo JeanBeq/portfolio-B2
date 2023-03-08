@@ -2,16 +2,16 @@
     <div class="main-infos">
         <div class="main-infos-mid">
             <h1>A propos de moi</h1>
-            <h2 >Développeur web</h2>
+            <h2>Développeur web</h2>
             <div class="mainInfosMidBottom">
                 <div class="main-infos-mid-left">
-                <p id="desc">Bonjour à tous ! Je m'appelle Jean j'ai 19 ans et je viens d'haute savoie. J'étudie à My Digital School à Annecy, ou j'apprends le développement web ainsi que le design et le marketing digital à travers un bachelor web & multimédias. Je me suis orienté dans le développement web au cours de ma deuxième année de bachelor. J'ai eu l'occasion de mettre en avant mes compétences en réalisant plusieurs stages. <br><br> Lors de ma formation j'ai eu l'occasion d'apprendre plusieurs langages de programmation. Je maitrise l'HTML, le CSS, le JS avec les frameworks Vue et Nuxt, le PHP avec le framework symfony, la conception UML et le SQL. Je m'aitrise aussi les CMS WordPress et Wix que j'ai pu découvrir lors de projets scolaires ou stages. <br><br>
-                En plus de cela grâce à ma formation pluridisciplinaire je maitrise aussi la suite Adobe, Figma et la suite Microsoft
-                </p> 
-            </div>
-            <div class="main-infos-mid-right">
-                <img src="/img/jean.png" alt="" class="mainImg">
-            </div>
+                    <p id="desc">Bonjour à tous ! Je m'appelle Jean j'ai 19 ans et je viens d'haute savoie. J'étudie à My Digital School à Annecy, ou j'apprends le développement web ainsi que le design et le marketing digital à travers un bachelor web & multimédias. Je me suis orienté dans le développement web au cours de ma deuxième année de bachelor. J'ai eu l'occasion de mettre en avant mes compétences en réalisant plusieurs stages. <br><br> Lors de ma formation j'ai eu l'occasion d'apprendre plusieurs langages de programmation. Je maitrise l'HTML, le CSS, le JS avec les frameworks Vue et Nuxt, le PHP avec le framework symfony, la conception UML et le SQL. Je m'aitrise aussi les CMS WordPress et Wix que j'ai pu découvrir lors de projets scolaires ou stages. <br><br>
+                    En plus de cela grâce à ma formation pluridisciplinaire je maitrise aussi la suite Adobe, Figma et la suite Microsoft
+                    </p> 
+                </div>
+                <div class="main-infos-mid-right">
+                    <img src="/img/jean.png" alt="" class="mainImg">
+                </div>
             </div>
         </div>
         <div class="main-infos-img">
@@ -103,6 +103,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width: 991px) {
+    .main-infos-mid h1{
+        font-size: 5vw;
+    }
+    .main-infos-mid h2{
+        font-size: 15vw;
+    }
+    .main-infos-mid-left p{
+        font-size: 3vw;
+    }
 }
 </style>
 

@@ -116,6 +116,9 @@
     .bande-pj-2{
         width: 100vw;
     }
+    .allPj h1{
+        font-size: 12vw;
+    }
 }
 </style>
 
