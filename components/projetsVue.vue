@@ -15,7 +15,7 @@
         </div>
         <div class="right-slider-pr">
             <img src="/img/adb.png" alt="">
-            <div class="textPopUp2">
+            <div class="textPopUp">
                 <h2>Société de nettoyage ADB service</h2>
             </div>
         </div>
@@ -35,6 +35,7 @@
     color: white;
     padding-top: 30px;
     font-size: 55px;
+    text-align: center;
 }
 .projets p{
     color: white;
@@ -62,21 +63,23 @@
 .sliderProjets img:hover{
     filter: blur(5px);
 }
-.sliderProjets .textPopUp2::before, .sliderProjets .textPopUp2 h2{
+.sliderProjets .textPopUp ::before {
     content: "";
     position: absolute;
-    bottom: -20%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    bottom: 10%;
+    left: 50%;
+    color: pink;
     display: none;
 }
-.sliderProjets .textPopUp2:hover{
+.sliderProjets .textPopUp::after, .sliderProjets .textPopUp :hover {
     content: "";
     position: absolute;
-    bottom: 20%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    display: 100%;
+    bottom: 40%;
+    left: 50%;
+    color: pink;
+    display: block;
 }
 .left-slider-pr{
     position: relative;

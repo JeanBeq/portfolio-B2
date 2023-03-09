@@ -5,8 +5,8 @@
             <h2>Développeur web</h2>
             <div class="mainInfosMidBottom">
                 <div class="main-infos-mid-left">
-                    <p id="desc">Bonjour à tous ! Je m'appelle Jean j'ai 19 ans et je viens d'haute savoie. J'étudie à My Digital School à Annecy, ou j'apprends le développement web ainsi que le design et le marketing digital à travers un bachelor web & multimédias. Je me suis orienté dans le développement web au cours de ma deuxième année de bachelor. J'ai eu l'occasion de mettre en avant mes compétences en réalisant plusieurs stages. <br><br> Lors de ma formation j'ai eu l'occasion d'apprendre plusieurs langages de programmation. Je maitrise l'HTML, le CSS, le JS avec les frameworks Vue et Nuxt, le PHP avec le framework symfony, la conception UML et le SQL. Je m'aitrise aussi les CMS WordPress et Wix que j'ai pu découvrir lors de projets scolaires ou stages. <br><br>
-                    En plus de cela grâce à ma formation pluridisciplinaire je maitrise aussi la suite Adobe, Figma et la suite Microsoft
+                    <p id="desc">Bonjour à tous ! Je m'appelle Jean j'ai 19 ans et je viens d'Haute Savoie. J'étudie à My Digital School à Annecy, ou j'apprends le développement web ainsi que le design et le marketing digital à travers un bachelor web & multimédias. Je me suis orienté dans le développement web au cours de ma deuxième année de bachelor. J'ai eu l'occasion de mettre en avant mes compétences en réalisant plusieurs stages. <br><br> Lors de ma formation, j'ai eu l'occasion d'apprendre plusieurs langages de programmation. Je maîtrise l'HTML, le CSS, le JS avec les frameworks Vue et Nuxt, le PHP avec le framework symfony, la conception UML et le SQL. Je m'aitrise aussi les CMS WordPress et Wix que j'ai pu découvrir lors de projets scolaires ou de stages. <br><br>
+                    En plus de cela grâce à ma formation pluridisciplinaire je maîtrise aussi la suite Adobe, Figma et la suite Office.
                     </p> 
                 </div>
                 <div class="main-infos-mid-right">
@@ -19,7 +19,7 @@
             <h2 id="text-anim">MES PASSIONS</h2>
         </div>
         <div class="main-infos-txt">
-            <p>Depuis petit je suis passioné par l'automobile et les sports motorisés en général. J'ai eu l'occasion de pouvoir assister à de nombreux événements dans de nombreux pays. En plus de cela je suis passioné par la photographie et la vidéo depuis des années et je combine ces deux passions en allant à des evenements liés au sport automobile pour prendres des photos. Je pratique aussi plusieurs sports. Je pratique la musculation depuis plus d'un an, je fais du ski alpin depuis tout jeune</p>
+            <p>Depuis petit, je suis passionné par l'automobile et les sports motorisés en général. J'ai eu l'occasion de pouvoir assister à de nombreux événements dans de nombreux pays. En plus de cela, je suis passionné par la photographie et la vidéo depuis des années et je combine ces deux passions en allant à des événements liés au sport automobile pour prendre des photos. Je pratique aussi plusieurs sports. Je pratique la musculation depuis plus d'un an, je fais du ski alpin depuis tout jeune et de la boxe française depuis un an.</p>
         </div>
     </div>
 </template>

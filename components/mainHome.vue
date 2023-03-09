@@ -15,18 +15,18 @@
         z-index: -1;
         overflow-x: hidden;
     }
-    h1{
+    .container-main h1{
         font-size: 100px;
         color: white;
         text-transform: uppercase;
         font-weight: bold;
     }
-    h2{
+    .container-main h2{
         color: white;
         font-size: 25px;
         margin-bottom: 20px;
     }
-    h1, h2{
+    .container-main h1, .container-main h2{
         text-align: center;
     }
     .container-main{
@@ -38,10 +38,10 @@
         overflow-x: hidden;
     }
     @media screen and (max-width: 991px) {
-        h1{
+        .container-main h1{
             font-size:12vw
         }
-        h2{
+        .container-main h2{
             font-size: 5vw;
         }
     }

@@ -33,6 +33,7 @@
         color: white;
         padding-top: 30px;
         font-size: 55px;
+        text-align: center;
     }
     .bandeCompetences h2 strong{
         font-weight: bold;
@@ -139,8 +140,6 @@
 
 <script lang="ts">
 
-
-
 export default {
   name: 'ListComp',
   data() {
@@ -165,14 +164,14 @@ export default {
                 name: 'CSS',
                 description: 'CSS 1',
                 src: "/img/csslogo.png",
-                txt: "De même que l'Html j'ai découvert le CSS au lycée grâce à la spécialité NSI, j'ai bien aimé directement le coté Front"
+                txt: "De même que l'Html, j'ai découvert le CSS au lycée grâce à la spécialité NSI, j'ai bien aimé directement le coté Front"
             },
             {
                 id: 2,
                 name: 'JS',
                 description: 'JS 1',
                 src: "/img/jslogo.png",
-                txt: "J'ai découvert le Javascript en première année d'études à My Digital School et de même que tous les autres langages dit Front j'ai accroché directement."
+                txt: "J'ai découvert le Javascript en première année d'études à My Digital School et de même que tous les autres langages dit Front, j'ai accroché directement."
                 
             },
             {
@@ -194,14 +193,14 @@ export default {
                 name: 'Python',
                 description: 'Py 1',
                 src: "/img/pylogo.png",
-                txt: "J'ai appris le Python grâce à la spécialité NSI au lycée ou j'ai pu faire de nombreux petits projets et j'ai continué en parralele pour des petits projets personnels"
+                txt: "J'ai appris le Python grâce à la spécialité NSI au lycée ou j'ai pu faire de nombreux petits projets et j'ai continué en parallèle pour des petits projets personnels."
             },
             {
                 id: 6,
                 name: 'WordPress',
                 description: 'Wp',
                 src: "/img/wplogo.png",
-                txt: "J'ai appris à utiliser le CMS WordPress au sein de ma formation à My Digital School, j'ai pu approfondir ces conaissances en réalisant des projets scolaire via ces outils."
+                txt: "J'ai appris à utiliser le CMS WordPress au sein de ma formation à My Digital School, j'ai pu approfondir ses connaissances en réalisant des projets scolaires via ces outils."
             },
             {
                 id: 7,
@@ -215,14 +214,13 @@ export default {
                 name: 'Symfony',
                 description: 'Symfony',
                 src: "/img/symflogo.png",
-                txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisl, pretium sed orci vitae, commodo dictum arcu. Phasellus pulvinar augue et efficitur eleifend. In in malesuada ex. Aenean urna odio, porta quis ultrices nec, pulvinar quis velit. Nullam vitae nunc purus. Sed a gravida tortor."
+                txt: "J'ai eu l'occasion de découvrir le Framework Symfony en deuxième année de bachelor où nous avons pu réaliser une multitude de projets pour maîtriser cet outil."
             },
         ]
     }
   },
   methods: {
     prevPage() {
-        console.log(this.totalPages)
       if (this.currentPage >= 0) {
         this.currentPage--;
         this.selectedCompImg = this.comps[this.currentPage].src;

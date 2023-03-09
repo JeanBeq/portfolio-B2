@@ -1,8 +1,9 @@
 <template>
+    <link rel="icon" href="favicon.ico" />
     <div>
+        <CursorVue />
         <NavBar />
         <MainHome />
-        <!-- <BandeDefil /> -->
         <CompetencesVue />
         <ProjetsVue />
         <footerVue />

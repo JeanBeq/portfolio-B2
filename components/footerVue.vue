@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="footer-left">
-            <p>partie gauche du footer</p>
+            <p>Fait par Jean Béquilleux</p>
         </div>
         <div class="footer-right">
             <p>partie droite du footer</p>
@@ -20,5 +20,10 @@
     footer{
         background-color: black;
         height: 100px;
+    }
+    .footer-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
