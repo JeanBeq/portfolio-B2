@@ -115,7 +115,7 @@ import { Menu } from 'lucide-vue-next';
         },
         methods: {
             toggleMenu: function() {
-            this.menuOpen = !this.menuOpen;
+                this.menuOpen = !this.menuOpen;
             }
         },
         mounted() {
