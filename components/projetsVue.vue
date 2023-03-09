@@ -9,7 +9,7 @@
     <div class="sliderProjets" data-aos="zoom-in">
         <div class="left-slider-pr">
             <img src="/img/rhb.png" alt="">
-            <div class="textPopUp">
+            <div class="textPopUp textPopUp1">
                 <h2>Association Refuges Hautes Bauges</h2>
             </div>
         </div>
@@ -63,23 +63,31 @@
 .sliderProjets img:hover{
     filter: blur(5px);
 }
-.sliderProjets .textPopUp ::before {
-    content: "";
+.sliderProjets .textPopUp{ 
+    opacity: 0;
     position: absolute;
     transform: translate(-50%, -50%);
-    bottom: 10%;
+    bottom: 0;
     left: 50%;
-    color: pink;
-    display: none;
+    transition: all ease-in-out 0.2s;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
-.sliderProjets .textPopUp::after, .sliderProjets .textPopUp :hover {
-    content: "";
-    position: absolute;
-    transform: translate(-50%, -50%);
-    bottom: 40%;
-    left: 50%;
-    color: pink;
+.sliderProjets :hover .textPopUp{
+    bottom: 10%;
+    opacity: 1;
+    color: white;
     display: block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: grey;
+    height: 10%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 .left-slider-pr{
     position: relative;
@@ -121,6 +129,22 @@
     }
     .allPj h1{
         font-size: 12vw;
+    }
+    .sliderProjets .textPopUp{ 
+        opacity: 1;
+        border-radius: 15px;
+        height: 25%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: 20%;
+        padding: 25px;
+        left: 50%;
+        color: white;
+        text-align: center;
+        background-color: grey;
+    }
+    .sliderProjets:hover .textPopUp{ 
+        background-color: transparent;
     }
 }
 </style>
