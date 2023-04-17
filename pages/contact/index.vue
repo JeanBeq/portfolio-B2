@@ -1,4 +1,5 @@
 <template>
+    <title>Contact</title>
     <CursorVue />
     <link rel="icon" href="favicon.ico" />
     <NavBar />

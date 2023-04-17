@@ -1,11 +1,13 @@
 <template>
     <link rel="icon" href="favicon.ico" />
+    <title>Portfolio</title>
     <div>
         <CursorVue />
         <NavBar />
         <MainHome />
         <CompetencesVue />
         <ProjetsVue />
+        <Experience />
         <footerVue />
     </div>
 </template>

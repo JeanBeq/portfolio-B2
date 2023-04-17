@@ -2,7 +2,7 @@
     <div class="allPj">
         <div class="projets">
             <div class="bande-pj"></div>
-            <h1>MES - <strong>PROJETS /</strong></h1>
+            <h2>MES - <strong>PROJETS /</strong></h2>
             <p>Réalisés lors de stages ou lors de projets scolaires</p>
             <div class="bande-pj-2"></div>
         </div>
@@ -24,7 +24,6 @@
         </div>
     </div>
     </div>
-    
 </template>
 
 <style>
@@ -34,7 +33,7 @@
 .projets{
     position: relative;
 }
-.projets h1{
+.projets h2{
     color: white;
     padding-top: 30px;
     font-size: 55px;
