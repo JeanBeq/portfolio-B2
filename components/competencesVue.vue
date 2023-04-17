@@ -145,8 +145,6 @@ export default {
   data() {
     return{
         currentPage: 0,
-        itemsPerPage: 1,
-        translateValue: 0,
         selectedCompId: 0,
         selectedCompImg: "/img/htmllogo.png",
         selectedCompName: 'HTML',

@@ -1,16 +1,16 @@
 <template>
     <footer>
         <div class="footer-left">
-            <p>Fait par Jean Béquilleux</p>
+            <p>Fait par <a href="https://www.linkedin.com/in/jean-bequilleux/">Jean Béquilleux</a> </p>
         </div>
         <div class="footer-right">
-            <p>partie droite du footer</p>
+            <a href="/contact">Contact</a>
         </div>
     </footer>
 </template>
 
 <style>
-    p{
+    footer p, footer a{
         color: white;
     }
     footer{
@@ -21,9 +21,18 @@
         background-color: black;
         height: 100px;
     }
-    .footer-left{
+    .footer-left, .footer-right{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .footer-left{
+        margin-left: 5vw;
+    }
+    .footer-left a{
+        text-decoration: underline;
+    }
+    .footer-right{
+        margin-right: 5vw;
     }
 </style>
