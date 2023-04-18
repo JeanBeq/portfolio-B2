@@ -166,21 +166,8 @@
     .allPj h1{
         font-size: 12vw;
     }
-    .sliderProjets .textPopUp{ 
-        opacity: 1;
-        border-radius: 15px;
-        height: 25%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        bottom: 20%;
-        padding: 25px;
-        left: 50%;
-        color: white;
-        text-align: center;
-        background-color: grey;
-    }
-    .sliderProjets:hover .textPopUp{ 
-        background-color: transparent;
+    .sliderProjets{ 
+        flex-direction: column;
     }
 }
 </style>
