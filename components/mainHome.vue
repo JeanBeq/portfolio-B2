@@ -2,7 +2,7 @@
     <div class="container-main">
         <video src="/video/video_background2.mp4" autoplay loop muted playsinline></video>
         <h1 class="line-1 anim-typewriter">Developpeur web</h1>
-        <h2>Jean Béquilleux - Etudiant Web Developpeur situé à Annecy en France</h2>
+        <h2>Jean Béquilleux - Etudiant Web Developpeur situé à Annecy</h2>
     </div>
 </template>
 
