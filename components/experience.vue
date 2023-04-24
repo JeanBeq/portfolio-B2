@@ -25,6 +25,28 @@
                 </div>
             </div>
         </div>
+        <div class="contentExp contentExp2">
+            <h3 data-aos="fade-up"><strong>Job étudiant - Caissier</strong></h3>
+            <div class="detailedContentExp">
+                <div class="barreExp" data-aos="fade-right"></div>
+                <div class="expDetail">
+                    <p data-aos="fade-up"><strong>Juin 2022 - Juillet 2022</strong></p>
+                    <p data-aos="fade-up">Pendant deux mois, j'ai eu la chance de travailler en tant qu'étudiant dans un magasin bio situé à Ferney Voltaire. Tout au long de cette expérience, j'ai eu l'opportunité d'accomplir diverses tâches, notamment la réception de commandes, la mise en place des rayons, l'encaissement des paiements, ainsi que la préparation des commandes pour les clients.<br><br>
+
+                    J'ai été amené à interagir avec les clients afin de les aider à trouver les produits qu'ils cherchaient et répondre à leurs interrogations. Grâce à cette expérience enrichissante dans le domaine de la vente au détail, j'ai pu développer mes compétences en communication et en relation client, tout en apprenant l'importance du travail d'équipe et de l'organisation dans un environnement professionnel.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contentExp contentExp2">
+            <h3 data-aos="fade-up"><strong>Job étudiant - Paysagiste</strong></h3>
+            <div class="detailedContentExp">
+                <div class="barreExp" data-aos="fade-right"></div>
+                <div class="expDetail">
+                    <p data-aos="fade-up"><strong>Juillet 2021 - Juillet 2021</strong></p>
+                    <p data-aos="fade-up">En juillet 2021, j'ai travaillé comme paysagiste pendant un mois. J'ai travaillé en équipe et j'ai participé à la préparation du terrain, à la tonte des pelouses, à la coupe de haies et au nettoyage des chemins. J'ai également appris à planter et à entretenir des jardins, ainsi qu'à concevoir des plans d'aménagement paysager pour des clients. Cette expérience m'a permis de découvrir ma passion pour le métier de paysagiste et de comprendre l'importance du travail d'équipe dans la réussite d'un projet paysager.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -67,6 +89,9 @@
 }
 .contentExp2{
     margin-top: 5vh
+}
+.contentExp:last-child{
+    margin-bottom: 5vh;
 }
 </style>
 

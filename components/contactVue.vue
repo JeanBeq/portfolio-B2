@@ -23,7 +23,7 @@
 .mainContact .topContact h1{
     text-transform: uppercase;
     color: black;
-    text-align: center;
+    margin-left: 30.8%;
     font-size: 80px;
     font-weight: bold;
     margin-top: 80px;

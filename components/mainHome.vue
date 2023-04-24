@@ -39,7 +39,6 @@
     }
     .container-main .line-1{
         width: 20.18em;
-        margin: 0 auto;
         border-right: 4px solid rgba(255,255,255,.75);
         white-space: nowrap;
         overflow: hidden;
@@ -59,30 +58,3 @@
         }
     }
 </style>
-
-<script>
-import { gsap } from "gsap";
-    export default{
-        mounted() {
-            var tl =  gsap.timeline({
-                paused:true
-            });
-
-            tl.fromTo(".anim-typewriter", 8, {
-                width: "0",
-            }, {
-                width: "20.18em",
-                ease: "steps(37)"
-            }, 0);
-            tl.fromTo(".anim-typewriter", 0.5, {
-                "border-right-color": "rgba(255,255,255,0.75)"
-            }, {
-                "border-right-color": "rgba(255,255,255,0)",
-                repeat: -1,
-                ease: "steps(37)"
-            }, 0);
-
-            tl.play();
-        }
-    }
-</script>

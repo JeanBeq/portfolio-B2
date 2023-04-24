@@ -179,6 +179,10 @@
         width: 90%;
         margin: 0 auto;
     }
+    .pjText{
+        margin-left: 0;
+        width: 90vw;
+    }   
 }
 </style>
 
