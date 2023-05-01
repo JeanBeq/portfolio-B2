@@ -93,6 +93,13 @@
 .contentExp:last-child{
     margin-bottom: 5vh;
 }
+@media screen and (max-width: 991px) {
+    .mainExp .contentExp{
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+}
 </style>
 
 <script>

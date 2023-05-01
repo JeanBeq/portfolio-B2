@@ -180,9 +180,15 @@
         margin: 0 auto;
     }
     .pjText{
-        margin-left: 0;
+        margin-left: 5%;
         width: 90vw;
-    }   
+    }
+    .bande-pj{
+        display: none;
+    }
+    .bande-pj-2{
+        display: none;
+    }
 }
 </style>
 
