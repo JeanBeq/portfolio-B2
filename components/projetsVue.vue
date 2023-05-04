@@ -228,6 +228,14 @@ export default{
                 txt: "Il s'agit d'un site internet que j'ai créé lors d'une semaine d'examens en première année de bachelor. Le sujet étant libre, j'ai choisi de créer un rallye de supercars. Le site présente les éléments de la charte graphique ainsi que les informations clés de l'événement. Bien que le site ne soit pas entièrement finalisé en raison de contraintes de temps, il reste à finaliser le responsive design et à améliorer certains détails",
                 lien: 'https://github.com/JeanBeq/Projet-partiel-site-Gear-Rallye',
             },
+            {
+                id: 3,
+                name: 'Escape The Darkness',
+                description: 'ets',
+                src: "/img/ets.png",
+                txt: "En tant que membre de l'équipe de développement d'un jeu d'évasion nommé 'Escape the Darkness', j'ai participé à une compétition inter-écoles organisée par My Digital School. Avec une équipe de 5 personnes, nous avons utilisé l'outil de développement de jeux Stencyl pour créer ce jeu en un temps limité. Bien que le temps de développement fût court, nous avons travaillé ensemble pour concevoir un jeu captivant qui mettait en valeur nos compétences en matière de travail d'équipe et notre capacité à travailler rapidement et efficacement pour atteindre notre objectif.",
+                lien: 'https://jean-bequilleux.itch.io/escape-the-darkness',
+            },
         ]
     }
   },
